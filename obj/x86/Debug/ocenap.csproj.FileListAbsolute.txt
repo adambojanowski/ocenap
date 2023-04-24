@@ -1,0 +1,6 @@
+/home/adam/Projects/ocenap/ocenap/obj/x86/Debug/ocenap.csproj.AssemblyReference.cache
+/home/adam/Projects/ocenap/ocenap/obj/x86/Debug/ocenap.csproj.CoreCompileInputs.cache
+/home/adam/Projects/ocenap/ocenap/bin/Debug/ocenap.exe
+/home/adam/Projects/ocenap/ocenap/bin/Debug/ocenap.pdb
+/home/adam/Projects/ocenap/ocenap/obj/x86/Debug/ocenap.exe
+/home/adam/Projects/ocenap/ocenap/obj/x86/Debug/ocenap.pdb

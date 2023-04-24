@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 namespace ocenap
-{
+{//trele morele
     class MainClass
     /*
      List<string> lista = new List<string>();

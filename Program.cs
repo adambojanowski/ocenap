@@ -91,24 +91,43 @@ namespace ocenap
                 /*for (int i = 0; i < pracownicy.Count; i++)
                 {
                     Pracownik a = pracownicy[i];*/
-                    Console.WriteLine(pracownicy);//tylko 1 linia
-                //}
+                //Console.WriteLine(pracownicy.ForEach(Pracownik));//pisze tylko 1 linie
+                //pracownicy.ForEach(Console.WriteLine);//linQ tutaj
+                foreach (var item in pracownicy)
+                {
+                    //Console.WriteLine(string.Join(",",item.name,item.ocena));//ok
+                    Console.WriteLine(item.id+" "+item.name+" "+item.ocena);
+                }
+                //pracownicy.Sort(Pracownik.pOcena);//(Pracownik.ocena);
+                Console.WriteLine("--------------------------");
+
+                var enum1 = from Pracownik in pracownicy
+                            orderby Pracownik.ocena
+                            select Pracownik;
+
+                foreach (var e in enum1)
+                {
+                    //Console.WriteLine(e);
+                    Console.WriteLine(e.id + " " + e.name + " " + e.ocena);
+                }
+
+                Console.WriteLine("--------------------------");
+
+
+
+
+                //pracownicy.Sort(ocena);
+                //Console.WriteLine(string.Join(",", pracownicy));//??
+                foreach (var item in pracownicy)
+                {
+                    //Console.WriteLine(string.Join(item.name,item.ocena));
+                    Console.WriteLine(item.id + " " + item.name + " " + item.ocena);
+                }
+
             }
+
+           
         }
-
-        /*class Pracownik
-        {
-            public int Id; //=1;
-            public string name; //= "Adam Bojanowski";
-            public float ocena; //= 23.7F;
-
-            public Pracownik(int Id, string pName, float pOcena)//konstruktor inicjalizuje 
-            {
-                //this.name = "janek";
-                //this.ocena = 22.1F;
-                this.Id = Id;
-                this.name = pName;
-                this.ocena = pOcena;
-            }*/
     }
 }
+
